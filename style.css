@@ -1,0 +1,56 @@
+body {
+    background-color: #202225; /* 어두운 배경 */
+    color: white;             /* 흰색 텍스트 */
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh; /* 화면 전체 높이 사용 */
+    margin: 0;
+}
+
+.title {
+    font-size: 2.5em;
+    margin-bottom: 50px;
+    color: white; /* 흰색 제목 */
+    font-weight: bold;
+}
+
+.roll-container {
+    display: flex;
+    gap: 40px; /* 칸 사이의 간격 */
+}
+
+.roll-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.roll-item img {
+    width: 150px;  /* 이미지 크기 */
+    height: 150px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    background-color: #36393f; 
+    border: 3px solid #36393f;
+    object-fit: cover; /* 이미지가 잘리지 않고 채워지도록 설정 */
+}
+
+.roll-button {
+    background-color: #a74848; /* Roll 버튼 배경색 (빨간색 계열) */
+    color: white;
+    border: none;
+    padding: 10px 30px;
+    font-size: 1.1em;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    text-transform: uppercase; /* Roll 텍스트를 대문자로 */
+}
+
+.roll-button:hover {
+    background-color: #8c3e3e; /* 호버 효과 */
+}
