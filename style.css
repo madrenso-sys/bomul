@@ -29,13 +29,13 @@ body {
 }
 
 .roll-item img {
-    width: 150px;  /* 이미지 크기 */
-    height: 150px;
+    width: 150px;   /* 가로 크기 */
+    height: 200px;  /* 3:4 비율 고려 세로 크기 조정 */
     border-radius: 10px;
     margin-bottom: 20px;
     background-color: #36393f; 
     border: 3px solid #36393f;
-    object-fit: cover; /* 이미지가 잘리지 않고 채워지도록 설정 */
+    object-fit: contain; /* 이미지가 잘리지 않도록 contain으로 변경 */
 }
 
 .roll-button {
@@ -53,4 +53,5 @@ body {
 
 .roll-button:hover {
     background-color: #8c3e3e; /* 호버 효과 */
+
 }
